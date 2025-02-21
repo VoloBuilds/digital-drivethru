@@ -1,12 +1,11 @@
 # Digital Drive-Thru
 
-A full-stack web application that demonstrates modern web development concepts by drawing parallels between a digital ordering system and a traditional drive-thru restaurant. This project is part of the AI Coding 101 series, designed to take viewers from having no coding experience to building full-stack applications with the help of AI.
+This digital drive-thru is meant to demonstrate modern web development concepts by drawing parallels between a digital ordering system and a traditional drive-thru restaurant. This project is part of the AI Coding 101 series, designed to take viewers from having no coding experience to building full-stack applications with the help of AI.
 
 You can watch the full video here:
 
-[![AI Coding 101: How Full Stack Apps Actually Work](https://img.youtube.com/vi/5LIfSpr3GDM/0.jpg)](https://youtu.be/5LIfSpr3GDM)
+[![AI Coding 101: How Full Stack Apps Actually Work](https://img.youtube.com/vi/XB4UcDOWbXs/0.jpg)](https://youtu.be/XB4UcDOWbXs)
 > 🎥 AI Coding 101: How Full Stack Apps Actually Work
-
 
 ## Project Overview
 
@@ -22,7 +21,7 @@ This application simulates a digital drive-thru experience, where each component
   - Handles requests between the customer (frontend) and kitchen (backend)
   - Manages order creation, modification, and completion
 
-- **Kitchen (Backend)**: The business logic layer (`orderService.js` + `menuData.js`)
+- **Kitchen (Backend server)**: The business logic layer (`orderService.js` + `menuData.js`)
   - Processes orders and manages the cooking process
   - Handles inventory and ingredient management
   - Ensures order accuracy and completion
@@ -35,8 +34,8 @@ This application simulates a digital drive-thru experience, where each component
 ## Technical Stack
 
 - **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Node.js with Express
-- **API**: RESTful endpoints for order management
+- **Backend**: Node.js
+- **API**: Express js
 - **Database**: PostgreSQL
 
 ## System Requirements
@@ -80,6 +79,7 @@ This project is designed as part of the AI Coding 101 series to help beginners u
    # Create PostgreSQL database
    createdb drivethru
    ```
+   (or download pgAdmin and do it manually as in the video)
 
 2. Configure environment variables:
    Create a `.env` file in the server directory with:
@@ -98,6 +98,7 @@ This project is designed as part of the AI Coding 101 series to help beginners u
    npm install
    npm start
    ```
+   Note: also consider using nodemon instead of running directly via 'node' so the server restarts when you make file changes.
 
 4. Open the frontend:
    ```bash
